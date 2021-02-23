@@ -15,7 +15,7 @@
 
 
 [![Join Support!](https://img.shields.io/badge/Support%20Chat-ZeroUnion-red)](https://t.me/ZeroBotSupport) 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/fd09ddf4e2ed4d8082b16947aced4944)](https://www.codacy.com/gh/ChisakiKai/KaguyaRobot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ChisakiKai/KaguyaRobot&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/85c0a661d75a431cbf0147787bbab6fa)](https://www.codacy.com/gh/ChisakiKai/KaguyaRobot/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ChisakiKai/KaguyaRobot&amp;utm_campaign=Badge_Grade)
 
 
 A modular telegram Python bot running on python3 with an sqlalchemy database.
