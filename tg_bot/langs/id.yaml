@@ -13,7 +13,7 @@ pm_start_text: |
    Saya bot manajemen grup bertema Anime dengan beberapa tambahan ekstra [;)](https://telegra.ph/file/7437d2bf49d368994e787.jpg)
 
    Anda dapat menemukan daftar perintah yang tersedia dengan /help.
-grp_start_text: "Hi, I'm Kaguya."
+grp_start_text: "Hi, Saya Kaguya."
 
 pm_help_text: |
    Halo! Saya *Kaguya*. Bagian dari *Zero Union*.
@@ -34,71 +34,71 @@ updates_channel_link_btn: "Kaguya Updates Channel"
 src_btn: "Sumber (Dibawah Lisensi GPLV3)"
 
 admin_help: |
-   • `/admins`*:* list of admins in the chat
+   • `/admins`*:* daftar para admin di grup
 
    *Admins only:*
-   • `/pin`*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users.
-   • `/unpin`*:* unpins the currently pinned message
-   • `/invitelink`*:* gets invitelink
-   • `/promote`*:* promotes the user replied to
-   • `/demote`*:* demotes the user replied to
-   • `/title <title here>`*:* sets a custom title for an admin that the bot promoted
+   • `/pin`*:* dengan diam menyematkan pesan yang dibalas - tambahkan `'muatan'` atau`' beri tahu'` untuk memberikan pemberitahuan kepada pengguna.
+   • `/unpin`*:* melepas pesan yang saat ini disematkan
+   • `/invitelink`*:* mendapatkan tautan undangan
+   • `/promote`*:* mempromosikan pengguna reply pesannya 
+   • `/demote`*:* menurunkan pengguna reply pesannya
+   • `/title <title here>`*:* menetapkan judul khusus untuk admin yang dipromosikan bot
 
 afk_help: |
-   - `/afk <reason>`*:* mark yourself as AFK(away from keyboard).
-   - `brb <reason>`*:* same as the afk command - but not a command.
-   When marked as AFK, any mentions will be replied to with a message to say you're not available!
+   - `/afk <alasan>`*:* tandai diri Anda sebagai AFK (jauh dari keyboard).
+   - `brb <alasan>`*:* sama dengan perintah AFK - tapi bukan sebuah perintah.
+   Saat ditandai sebagai AFK, setiap sebutan akan dibalas dengan pesan yang mengatakan Anda tidak tersedia!
 
 anilist_help: |
     *AniList*
-    Get information about anime, manga or characters with the help of this module! All data is fetched from [AniList](anilist.co).
-    *Available commands:*
-     - `/anime <anime>`*:* returns information about the anime.
-     - `/character <character>:`** returns information about the character.
-     - `/manga <manga>`*:* returns information about the manga.
+    Dapatkan informasi tentang anime, manga, atau karakter dengan bantuan modul ini! Semua data diambil dari [AniList] (anilist.co).
+    *Perintah Tersedia:*
+     - `/anime <anime> `*: * mengembalikan informasi tentang anime.
+     - `/character <character>:` ** mengembalikan informasi tentang karakter.
+     - `/manga <mangi>` *: * mengembalikan informasi tentang manga.
 
 antiflood_help: |
-    Antiflood allows you to take action on users that send more than x messages in a row. Exceeding the set flood
-    will result in restricting that user.
-     This will mute users if they send more than 10 messages in a row, bots are ignored.
-     • `/flood`*:* Get the current flood control setting
-     *Admins only:*
-     • `/setflood <int/'no'/'off'>`*:* enables or disables flood control
-     *Example:* `/setflood 10`
-     • `/setfloodmode <ban/kick/mute/tban/tmute> <value>`*:* Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban
-     *Note:*
-     • Value must be filled for tban and tmute!!
-     It can be:
-     `5m` = 5 minutes
-     `6h` = 6 hours
-     `3d` = 3 days
-     `1w` = 1 week
+    Antiflood memungkinkan Anda mengambil tindakan terhadap pengguna yang mengirim lebih dari x pesan secara berurutan. Melebihi banjir set
+    akan mengakibatkan pembatasan pengguna itu.
+     Ini akan membisukan pengguna jika mereka mengirim lebih dari 10 pesan berturut-turut, bot diabaikan.
+     • `/banjir` *: * Dapatkan pengaturan banjir saat ini
+     * Hanya Admin: *
+     • `/ setflood <int / 'no' / 'off'>` *: * mengaktifkan atau menonaktifkan kontrol banjir
+     * Contoh: * `/ setflood 10`
+     • `/ setfloodmode <ban/kick/mute /tban/tmute> <value>` *: * Tindakan yang akan dilakukan ketika pengguna telah melebihi batas banjir. ban / tendang/bisukan/suarakan/tban
+     *Catatan:*
+     • Nilai harus diisi untuk tban and tmute !!
+     Bisa jadi:
+     `5m` = 5 menit
+     `6h` = 6 jam
+     `3d` = 3 hari
+     `1w` = 1 minggu
 
 approve_help: |
-     Sometimes, you might trust a user not to send unwanted content.
-     Maybe not enough to make them admin, but you might be ok with locks, blacklists, and antiflood not applying to them.
-     That's what approvals are for - approve of trustworthy users to allow them to send
-     *Admin commands:*
-     • `/approval`*:* Check a user's approval status in current chat.
-     • `/approve`*:* Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.
-     • `/unapprove`*:* Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.
-     • `/approved`*:* List all approved users.
-     • `/unapproveall`*:* Unapprove *ALL* users in a chat. This cannot be undone.
+     Terkadang, Anda mungkin mempercayai pengguna untuk tidak mengirim konten yang tidak diinginkan. 
+     Mungkin tidak cukup untuk menjadikannya admin, tetapi Anda mungkin baik-baik saja dengan kunci, daftar hitam, dan antiflood yang tidak berlaku untuk mereka. 
+     Untuk itulah persetujuan - menyetujui pengguna yang dapat dipercaya untuk mengizinkan mereka mengirim
+     *Perintah admin:*
+     • `/approval`*:* Periksa status persetujuan pengguna dalam obrolan saat ini.
+     • `/approve`*:* Setujui pengguna. Kunci, daftar hitam, dan antiflood tidak akan berlaku lagi.
+     • `/unapprove`*:* Tidak menyetujui pengguna. Mereka sekarang akan terkena kunci, daftar hitam, dan antiflood lagi.
+     • `/approved`*:* Daftar semua pengguna yang disetujui.
+     • `/unapproveall`*:* Batalkan persetujuan *SEMUA* pengguna dalam obrolan. Ini tidak dapat dibatalkan.
 
 backup_help: |
-    *Admin only:*
-     - `/import`*:* reply to a group butler backup file to import as much as possible, making the transfer super simple! Note \
-       that files/photos can't be imported due to telegram restrictions.
-     - `/export`*:* !!! This isn't a command yet, but should be coming soon!
+    *Admin saja:*
+     - `/import`*:* balas file cadangan butler grup untuk mengimpor sebanyak mungkin, membuat transfer menjadi sangat mudah! Catatan \ 
+     bahwa file / foto tidak dapat diimpor karena batasan telegram.
+     - `/export`*:* !!! Ini belum menjadi perintah, tetapi akan segera hadir!
 
 bans_help: |
-    - /kickme: kicks the user who issued the command
+    - /kickme: menendang pengguna yang mengeluarkan perintah tersebut.
 
-     *Admin only:*
-    - `/ban <userhandle>`*:* bans a user. (via handle, or reply)
-    - `/tban <userhandle>x(m/h/d)`*:* bans a user for x time. (via handle, or reply). m = minutes, h = hours, d = days.
-    - `/unban <userhandle>`*:* unbans a user. (via handle, or reply)
-    - `/kick <userhandle>`*:* kick a user out of the group, (via handle, or reply)
+     *Admin saja:*
+    - `/ban <userhandle>`*:* melarang pengguna. (melalui pegangan, atau balasan)
+    - `/tban <userhandle>x(m/h/d)`*:* melarang pengguna selama x waktu. (melalui pegangan, atau balasan). m = menit, h = jam, d = hari.
+    - `/unban <userhandle>`*:* batalkan larangan pengguna. (melalui pegangan, atau balasan)
+    - `/kick <userhandle>`*:* menendang pengguna keluar dari grup, (melalui pegangan, atau balasan)
 
 blacklist_help: |
     - Blacklist Users
@@ -384,52 +384,51 @@ userinfo_help: |
       - `/me`*:* will get your or another user's info
 
 warns_help: |
-      • `/warns <userhandle>`*:* get a user's number, and reason, of warns.
-      • `/warnlist`*:* list of all current warning filters
+      • `/warns <userhandle>`*:* dapatkan nomor pengguna, dan alasan, peringatan.
+      • `/warnlist`*:* daftar semua filter peringatan saat ini
 
       *Admins only:*
-      • `/warn <userhandle>`*:* warn a user. After 3 warns, the user will be banned from the group. Can also be used as a reply.
-      • `/resetwarn <userhandle>`*:* reset the warns for a user. Can also be used as a reply.
-      • `/addwarn <keyword> <reply message>`*:* set a warning filter on a certain keyword. If you want your keyword to
-      be a sentence, encompass it with quotes, as such: `/addwarn "very angry" This is an angry user`.
-      • `/nowarn <keyword>`*:* stop a warning filter
-      • `/warnlimit <num>`*:* set the warning limit
-      • `/strongwarn <on/yes/off/no>`*:* If set to on, exceeding the warn limit will result in a ban. Else, will just kick.
+      • `/warn <userhandle>`*:* peringatkan pengguna. Setelah 3 peringatan, pengguna akan diblokir dari grup. Bisa juga digunakan sebagai balasan.
+      • `/resetwarn <userhandle>`*:* setel ulang peringatan untuk pengguna. Bisa juga digunakan sebagai balasan.
+      • `/addwarn <keyword> <reply message>`*:* setel filter peringatan pada kata kunci tertentu. 
+      Jika Anda ingin kata kunci Anda jadilah kalimat, lengkapi dengan tanda kutip, seperti: `/ addwarn" very angry "This is an angry user`.
+      • `/nowarn <keyword>`*:* hentikan filter peringatan
+      • `/warnlimit <num>`*:* setel batas peringatan
+      • `/strongwarn <on/yes/off/no>`*:* Jika disetel ke aktif, melebihi batas peringatan akan mengakibatkan larangan. Lain, hanya akan menendang.
 
 greetings_help: |
       *Admins only:*
-       • `/welcome <on/off>`*:* enable/disable welcome messages.
-       • `/welcome`*:* shows current welcome settings.
-       • `/welcome noformat`*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
-       • `/goodbye`*:* same usage and args as `/welcome`.
-       • `/setwelcome <sometext>`*:* set a custom welcome message. If used replying to media, uses that media.
-       • `/setgoodbye <sometext>`*:* set a custom goodbye message. If used replying to media, uses that media.
-       • `/resetwelcome`*:* reset to the default welcome message.
-       • `/resetgoodbye`*:* reset to the default goodbye message.
-       • `/cleanwelcome <on/off>`*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
-       • `/welcomemutehelp`*:* gives information about welcome mutes.
-       • `/cleanservice <on/off`*:* deletes telegrams welcome/left service messages.
+       • `/welcome <on/off>`*:* aktifkan / nonaktifkan pesan selamat datang.
+       • `/welcome`*:* menunjukkan pengaturan selamat datang saat ini.
+       • `/welcome noformat`*:* menunjukkan pengaturan selamat datang saat ini, tanpa pemformatan - berguna untuk mendaur ulang pesan selamat datang Anda!
+       • `/goodbye`*:* penggunaan dan argumen yang sama dengan `/ welcome`.
+       • `/setwelcome <sometext>`*:* setel pesan selamat datang khusus. Jika digunakan membalas media, gunakan media itu.
+       • `/setgoodbye <sometext>`*:* setel pesan selamat tinggal kustom. Jika digunakan membalas media, gunakan media itu.
+       • `/resetwelcome`*:* reset ke pesan selamat datang ke default.
+       • `/resetgoodbye`*:* reset ke pesan selamat tinggal ke default.
+       • `/cleanwelcome <on/off>`*:* Pada anggota baru, coba hapus pesan selamat datang sebelumnya untuk menghindari spamming pada obrolan.
+       • `/welcomemutehelp`*:* memberikan informasi tentang pembungkaman selamat datang.
+       • `/cleanservice <on/off`*:* menghapus pesan layanan selamat datang / tinggalkan telegram.
        *Example:*
-      user joined chat, user left chat.
+      pengguna bergabung dengan obrolan, pengguna meninggalkan obrolan.
 
       *Welcome markdown:*
-       • `/welcomehelp`*:* view more formatting information for custom welcome/goodbye messages.
-
+       • `/welcomehelp`*:* lihat lebih banyak informasi pemformatan untuk pesan welcome/goodbye khusus.
+       
 nation_help: |
-      - `/sensei` - Lists all Zero Union members.
-      - `/sensei` - Lists all Sensei Level.
-      - `/sakuras` - Lists all Sakura Level.
-      - `/sardegnas` - Lists all Sardegnas Level.
-      - `/neptunians` - Lists all Neptunia Level.
-      Note: These commands list users with special bot priveleges and can only be used by them.
-      You can visit @ZeroBotSupport to query more about these.
-
+      - `/sensei` - Daftar semua anggota Zero Union.
+      - `/sensei` - Daftar semua Level Sensei.
+      - `/sakuras` - Daftar semua Level Sakura.
+      - `/sardegnas` - Daftar semua Level Sardegnas.
+      - `/neptunians` - Daftat semua Level Neptunia.
+      Catatan: Perintah ini mencantumkan pengguna dengan hak istimewa bot khusus dan hanya dapat digunakan oleh mereka.
+      Anda dapat mengunjungi @ZeroBotSupport untuk menanyakan lebih lanjut tentang ini.
+      
 nlp_help: |
 
       *Chatroom Spam Prediction*
-       This feature uses @Intellivoid's Coffeehouse AI to
-       process chat messages and detect spam.
-       This comes under Coffehouse' NLP. Learn more about
-       it [here](https://docs.intellivoid.net/coffeehouse/v1/nlp/spam_prediction/chatroom)
+       Fitur ini menggunakan AI Coffeehouse @ Intellivoid memproses pesan obrolan dan mendeteksi spam. 
+       Ini berada di bawah Coffehouse 'NLP. Belajar lebih tentang
+       itu [disini](https://docs.intellivoid.net/coffeehouse/v1/nlp/spam_prediction/chatroom)
        *Command:*
-        • `/nlpstat <on/off/yes/no>`*:* toggle NLP in your chat.
+        • `/nlpstat <on/off/yes/no>`*:* alihkan NLP dalam obrolan Anda.
