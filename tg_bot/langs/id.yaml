@@ -37,7 +37,7 @@ admin_help: |
    • `/admins`*:* daftar para admin di grup
 
    *Admins only:*
-   • `/pin`*:* dengan diam menyematkan pesan yang dibalas - tambahkan `'muatan'` atau`' beri tahu'` untuk memberikan pemberitahuan kepada pengguna.
+   • `/pin`*:* dengan diam menyematkan pesan yang dibalas - tambahkan `'loud'` atau`' notify'` untuk memberikan pemberitahuan kepada pengguna.
    • `/unpin`*:* melepas pesan yang saat ini disematkan
    • `/invitelink`*:* mendapatkan tautan undangan
    • `/promote`*:* mempromosikan pengguna reply pesannya 
@@ -45,27 +45,27 @@ admin_help: |
    • `/title <title here>`*:* menetapkan judul khusus untuk admin yang dipromosikan bot
 
 afk_help: |
-   - `/afk <alasan>`*:* tandai diri Anda sebagai AFK (jauh dari keyboard).
-   - `brb <alasan>`*:* sama dengan perintah AFK - tapi bukan sebuah perintah.
+   - `/afk <alasan>`*:* tandai diri Anda sebagai AFK.
+   - `brb <alasan>`*:* sama dengan AFK - tapi bukan sebuah perintah.
    Saat ditandai sebagai AFK, setiap sebutan akan dibalas dengan pesan yang mengatakan Anda tidak tersedia!
 
 anilist_help: |
     *AniList*
     Dapatkan informasi tentang anime, manga, atau karakter dengan bantuan modul ini! Semua data diambil dari [AniList] (anilist.co).
-    *Perintah Tersedia:*
-     - `/anime <anime> `*: * mengembalikan informasi tentang anime.
+    *Perintah yang Tersedia:*
+     - `/anime <anime> `*:* mengembalikan informasi tentang anime.
      - `/character <character>:` ** mengembalikan informasi tentang karakter.
-     - `/manga <mangi>` *: * mengembalikan informasi tentang manga.
+     - `/manga <manga>` *:* mengembalikan informasi tentang manga.
 
 antiflood_help: |
-    Antiflood memungkinkan Anda mengambil tindakan terhadap pengguna yang mengirim lebih dari x pesan secara berurutan. Melebihi banjir set
+    Antiflood memungkinkan Anda mengambil tindakan terhadap pengguna yang mengirim lebih dari x pesan secara berurutan. Melebihi flood set
     akan mengakibatkan pembatasan pengguna itu.
      Ini akan membisukan pengguna jika mereka mengirim lebih dari 10 pesan berturut-turut, bot diabaikan.
-     • `/banjir` *: * Dapatkan pengaturan banjir saat ini
+     • `/flood` *: * Dapatkan pengaturan flood saat ini
      * Hanya Admin: *
-     • `/ setflood <int / 'no' / 'off'>` *: * mengaktifkan atau menonaktifkan kontrol banjir
+     • `/ setflood <int / 'no' / 'off'>` *: * mengaktifkan atau menonaktifkan kontrol flood
      * Contoh: * `/ setflood 10`
-     • `/ setfloodmode <ban/kick/mute /tban/tmute> <value>` *: * Tindakan yang akan dilakukan ketika pengguna telah melebihi batas banjir. ban / tendang/bisukan/suarakan/tban
+     • `/ setfloodmode <ban/kick/mute /tban/tmute> <value>` *: * Tindakan yang akan dilakukan ketika pengguna telah melebihi batas flood. ban/kick/mute/tmute/tban
      *Catatan:*
      • Nilai harus diisi untuk tban and tmute !!
      Bisa jadi:
@@ -101,34 +101,34 @@ bans_help: |
     - `/kick <userhandle>`*:* menendang pengguna keluar dari grup, (melalui pegangan, atau balasan)
 
 blacklist_help: |
-    - Blacklist Users
+    - Daftar Hitam Pengguna
 
-    Blacklists Users are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!
+    Daftar Hitam Pengguna digunakan untuk menghentikan pemicu tertentu agar tidak diucapkan dalam grup. Setiap kali pemicu disebutkan, pesan akan segera dihapus. Kombo yang bagus terkadang memasangkan ini dengan filter peringatan!
 
-    *NOTE*: Blacklists do not affect group admins.
+    *CATATAN*: Daftar hitam tidak memengaruhi admin grup.
 
-     • `/blacklist`*:* View the current blacklisted words.
+     • `/blacklist`*:* Lihat kata-kata dalam daftar hitam saat ini.
 
     Admin only:
-     • `/addblacklist <triggers>`*:* Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
-     • `/unblacklist <triggers>`*:* Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.
-     • `/blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>`*:* Action to perform when someone sends blacklisted words.
+     • `/addblacklist <triggers>`*:* Tambahkan pemicu ke daftar hitam. Setiap baris dianggap sebagai satu pemicu, jadi menggunakan baris yang berbeda akan memungkinkan Anda menambahkan beberapa pemicu.
+     • `/unblacklist <triggers>`*:* Hapus pemicu dari daftar hitam. Logika baris baru yang sama berlaku di sini, jadi Anda bisa menghapus beberapa pemicu sekaligus.
+     • `/blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>`*:* Tindakan yang harus dilakukan ketika seseorang mengirimkan kata-kata yang masuk daftar hitam.
      
-    - Blacklist Stickers
+    - Daftar Hitam Stickers
     
-    Blacklist Stickers is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.
-    
-    *NOTE*: Blacklist do not affect group admins
+    Stiker Blacklist digunakan untuk menghentikan stiker tertentu. Setiap kali stiker dikirim, pesan tersebut akan segera dihapus.
+
+    *NOTE*: Daftar hitam tidak memengaruhi admin grup.
      
-     • `/blsticker`*:* See current blacklisted sticker
+     • `/blsticker`*:* Lihat stiker daftar hitam saat ini
      
     Admin only:
-     • `/addblsticker <sticker link>`*:* Add the sticker trigger to the black list. Can be added via reply sticker
-     • `/unblsticker <sticker link>`*:* Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once
-     • `/rmblsticker <sticker link>`*:* Same as above
-     • `/blstickermode <ban/tban/mute/tmute>`*:* sets up a default action on what to do if users use blacklisted stickers
-     Note:
-     • `<sticker link>` can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message
+     • `/addblsticker <sticker link>`*:* Tambahkan pemicu stiker ke daftar hitam. Dapat ditambahkan dengan membalas stiker tersebut.
+     • `/unblsticker <sticker link>`*:* Hapus pemicu dari daftar hitam. Logika baris baru yang sama berlaku di sini, jadi Anda bisa menghapus beberapa pemicu sekaligus.
+     • `/rmblsticker <sticker link>`*:* Sama seperti di atas.
+     • `/blstickermode <ban/tban/mute/tmute>`*:* Menyiapkan tindakan apa yang harus dilakukan jika pengguna menggunakan stiker daftar hitam.
+     Catatan:
+     • `<sticker link>` bisa dengan `https://t.me/addstickers/<sticker>` atau hanya `<sticker>` atau balas pesan stiker tersebut.
  
 cleaner_help: |
     - `/cleanbluetext <on/off/yes/no>` - clean commands after sending
