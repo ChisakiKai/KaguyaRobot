@@ -37,16 +37,16 @@ def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
 
 
 # I added extra new lines
-nations = """ Kigyō has bot access levels we call as *"Nation Levels"*
-\n*Eagle Union* - Devs who can access the bots server and can execute, edit, modify bot code. Can also manage other Nations
+nations = """ Kaguya has bot access levels we call as *"Special Levels"*
+\n*Zero Union* - Devs who can access the bots server and can execute, edit, modify bot code. Can also manage other Nations
 \n*God* - Only one exists, bot owner.
-Owner has complete bot access, including bot adminship in chats Kigyō is at.
-\n*Royals* - Have super user access, can gban, manage Nations lower than them and are admins in Kigyō.
-\n*Sakuras* - Have access go globally ban users across Kigyō.
+Owner has complete bot access, including bot adminship in chats Kaguya is at.
+\n*Senpai* - Have super user access, can gban, manage Nations lower than them and are admins in Kaguya.
+\n*Sakuras* - Have access go globally ban users across Kaguya.
 \n*Sardegnas* - Same as Neptunians but can unban themselves if banned.
 \n*Neptunians* - Cannot be banned, muted flood kicked but can be manually banned by admins.
-\n*Disclaimer*: The Nation levels in Kigyō are there for troubleshooting, support, banning potential scammers.
-Report abuse or ask us more on these at [Eagle Union](https://t.me/YorktownEagleUnion).
+\n*Disclaimer*: The Nation levels in Kaguya are there for troubleshooting, support, banning potential scammers.
+Report abuse or ask us more on these at [Zero Union](https://t.me/ZeroBotSupport).
 """
 
 
@@ -59,7 +59,7 @@ def send_nations(update):
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known Neptunia Nations :</b>\n"
+    reply = "<b>Known Neptunia Levels :</b>\n"
     for each_user in WHITELIST_USERS:
         user_id = int(each_user)
         try:
@@ -74,7 +74,7 @@ def whitelistlist(update: Update, context: CallbackContext):
 @whitelist_plus
 def Sardegnalist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known Sardegna Nations :</b>\n"
+    reply = "<b>Known Sardegna Levels :</b>\n"
     for each_user in SARDEGNA_USERS:
         user_id = int(each_user)
         try:
@@ -88,7 +88,7 @@ def Sardegnalist(update: Update, context: CallbackContext):
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known Sakura Nations :</b>\n"
+    reply = "<b>Known Sakura Levels :</b>\n"
     for each_user in SUPPORT_USERS:
         user_id = int(each_user)
         try:
@@ -103,7 +103,7 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     true_sudo = list(set(SUDO_USERS) - set(DEV_USERS))
-    reply = "<b>Known Royal Nations :</b>\n"
+    reply = "<b>Known Senpai Levels :</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -118,7 +118,7 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Eagle Union Members :</b>\n"
+    reply = "<b>Zero Union Members :</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -141,8 +141,8 @@ SARDEGNALIST_HANDLER = CommandHandler(["sardegnas"], Sardegnalist, run_async=Tru
 SUPPORTLIST_HANDLER = CommandHandler(
     ["supportlist", "sakuras"], supportlist, run_async=True
 )
-SUDOLIST_HANDLER = CommandHandler(["sudolist", "royals"], sudolist, run_async=True)
-DEVLIST_HANDLER = CommandHandler(["devlist", "eagle"], devlist, run_async=True)
+SUDOLIST_HANDLER = CommandHandler(["sudolist", "senpai"], sudolist, run_async=True)
+DEVLIST_HANDLER = CommandHandler(["devlist", "zero"], devlist, run_async=True)
 
 dispatcher.add_handler(WHITELISTLIST_HANDLER)
 dispatcher.add_handler(SARDEGNALIST_HANDLER)
@@ -150,7 +150,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "Nations"
+__mod_name__ = "College"
 __handlers__ = [
     WHITELISTLIST_HANDLER,
     SARDEGNALIST_HANDLER,

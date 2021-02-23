@@ -1,9 +1,3 @@
-'''#TODO
-
-Dank-del
-2020-12-29
-'''
-
 import importlib
 import re
 import json
@@ -50,13 +44,13 @@ from tg_bot.modules.language import gs
 
 PM_START_TEXT = """
 Hi {}, my name is {}!
-I am an Anime themed group management bot with some fun extras [;)](https://telegra.ph/file/095d7e696096e21b06447.jpg)
+I am an Anime themed group management bot with some fun extras [;)](https://telegra.ph/file/57d312f7ba4ed19bb6035.jpg)
 
 You can find the list of available commands with /help.
 """
 
 HELP_STRINGS = f"""
-Hello there! My name is *{dispatcher.bot.first_name}*. A part of *Eagle Union*.
+Hello there! My name is *{dispatcher.bot.first_name}*. A part of *Zero Union*.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 *Main* commands available:
@@ -68,7 +62,7 @@ the things I can help you with.
  \nClick on the buttons below to get documentation about specific modules!"""
 
 
-KIGYO_IMG = "https://telegra.ph/file/e5100e06c03767af80023.jpg"
+KAGUYA_IMG = "https://telegra.ph/file/3e0587f49f69bb520164c.jpg"
 
 
 IMPORTED = {}
@@ -164,7 +158,7 @@ def start(update: Update, context: CallbackContext):
             elif args[0].lower() == "markdownhelp":
                 IMPORTED["extras"].markdown_help_sender(update)
             elif args[0].lower() == "nations":
-                IMPORTED["nations"].send_nations(update)
+                IMPORTED["college"].send_nations(update)
             elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
                 chat = dispatcher.bot.getChat(match.group(1))
@@ -180,7 +174,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                photo=KIGYO_IMG,
+                photo=KAGUYA_IMG,
                 caption=gs(chat.id, "pm_start_text").format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name),
@@ -200,17 +194,17 @@ def start(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "support_chat_link_btn"),
-                                url=f"https://t.me/YorktownEagleUnion",
+                                url=f"https://t.me/ZeroBotSupport",
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "updates_channel_link_btn"),
-                                url="https://t.me/KigyoUpdates",
+                                url="https://t.me/KaguyaUpdates",
                             ),
                         ],
                         [
                             InlineKeyboardButton(
                                 text=gs(chat.id, "src_btn"),
-                                url="https://github.com/Dank-del/EnterpriseALRobot",
+                                url="https://github.com/Anomaliii/KaguyaRobot",
                             )
                         ],
                     ]
