@@ -174,8 +174,8 @@ disable_help: |
      • `/listcmds`*:* Daftar semua kemungkinan perintah yang dapat dinonaktifkan
 
 feds_help: |
-     Ah, manajemen grup. Semuanya menyenangkan, sampai pelaku spam mulai memasuki grup Anda, dan Anda harus memblokirnya. Maka Anda perlu mulai melarang lebih banyak, dan lebih banyak lagi, dan itu menyakitkan.
-     Tetapi kemudian Anda memiliki banyak grup, dan Anda tidak ingin pelaku spam ini berada di salah satu grup Anda - bagaimana Anda bisa menangani? Apakah Anda harus memblokirnya secara manual, di semua grup Anda?
+    Ah, manajemen grup. Semuanya menyenangkan, sampai pelaku spam mulai memasuki grup Anda, dan Anda harus memblokirnya. Maka Anda perlu mulai melarang lebih banyak, dan lebih banyak lagi, dan itu menyakitkan. 
+    Tetapi kemudian Anda memiliki banyak grup, dan Anda tidak ingin pelaku spam ini berada di salah satu grup Anda - bagaimana Anda bisa menangani? Apakah Anda harus memblokirnya secara manual, di semua grup Anda?
      
     Tidak lagi! Dengan Federasi, Anda dapat membuat larangan dalam satu obrolan tumpang tindih dengan semua obrolan lainnya.
     Anda bahkan dapat menetapkan federasi admin, sehingga admin tepercaya Anda dapat memblokir semua obrolan yang ingin Anda lindungi.
