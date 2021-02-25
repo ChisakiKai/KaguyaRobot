@@ -32,6 +32,7 @@ from telegram.utils.helpers import mention_html
 from tg_bot.modules.helper_funcs.chat_status import dev_plus
 from spamprotection.sync import SPBClient
 from spamprotection.errors import HostDownError
+from spamwatch.errors import SpamWatchError, Error, UnauthorizedError, NotFoundError, Forbidden, TooManyRequests
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -456,6 +457,9 @@ def check_and_ban(update, user_id, should_message=True):
         sw_ban = sw.get_ban(int(user_id))
     except AttributeError:
         sw_ban = None
+    except (SpamWatchError, Error, UnauthorizedError, NotFoundError, Forbidden, TooManyRequests) as e:
+        log.warning(f" SpamWatch Error: {e}")
+        sw_ban = None
 
     if sw_ban:
         update.effective_chat.kick_member(user_id)
@@ -595,7 +599,7 @@ dispatcher.add_handler(UNGBAN_HANDLER)
 dispatcher.add_handler(GBAN_LIST)
 dispatcher.add_handler(GBAN_STATUS)
 
-__mod_name__ = "Anti-Spam"
+__mod_name__ = "AntiSpam"
 __handlers__ = [GBAN_HANDLER, UNGBAN_HANDLER, GBAN_LIST, GBAN_STATUS]
 
 if STRICT_GBAN:  # enforce GBANS if this is set

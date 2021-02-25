@@ -319,22 +319,22 @@ def stats(update, context):
     try:
         update.effective_message.reply_text(
 
-            f"*Kaguya (@{context.bot.username}), *\n" +
-            "built by [Zero](t.me/Anomaliii)\n" +
+            f"*Kigyo (@{context.bot.username}), *\n" +
+            "Maintained by [Dank-del](t.me/dank_as_fuck)\n" +
             "Built with ❤️ using python-telegram-bot\n\n" + status +
             "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS]) +
-            "\n\n*SRC*: [GitHub](https://github.com/Anomaliii/KaguyaRobot)",
+            "\n\n*SRC*: [GitHub](https://github.com/Dank-del/EnterpriseALRobot) | [GitLab](https://gitlab.com/Dank-del/EnterpriseALRobot)",
         parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     except BaseException:
         update.effective_message.reply_text(
 
-            f"*Kaguya (@{context.bot.username}), *\n" +
-            "built by [Zero](t.me/Anomaliii)\n" +
+            f"*Kigyo (@{context.bot.username}), *\n" +
+            "built by [Dank-del](t.me/dank_as_fuck)\n" +
             "Built with ❤️ using python-telegram-bot\n" +
             "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS]) +
-            "\n\n*SRC*: [GitHub](https://github.com/Anomaliii/KaguyaRobot)",
+            "\n\n*SRC*: [GitHub](https://github.com/Dank-del/EnterpriseALRobot) | [GitLab](https://gitlab.com/Dank-del/EnterpriseALRobot)",
         parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
 
